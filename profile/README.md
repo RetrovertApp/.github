@@ -14,30 +14,38 @@ The aim I have with Retrovert is "a modern music player for your old-school need
 
 Over many years I tried various players and while some of them hold up none of them has been what I been looking for. Before starting this project I looked around quite a bit for alternatives and nothing really fit the bill.
 
-# Repository structure
+## Repository structure
 
 Retroverts is a highly modular project, and the repository is structured as such. The idea is that the core player can be used from other projects, and the UI can be replaced with something else if desired.
 
-## core
+### core
 
 https://github.com/RetrovertApp/retrovert-core
 
 The core is the main part of Retrovert. It contains the loading of files, plugins, handling of playlists, and decoding the audio. Output of the audio is done through a plugin system, and can target different outputs such as regular audio output or writing to a file.
 
-## core-loader
+### core-loader
 
 https://github.com/RetrovertApp/core-loader
 
 This is used by the frontends to load the core dynamic library. It sets up the interface to make it easier to call functions in the core. 
 
-## retrovert
+### retrovert
 
 https://github.com/RetrovertApp/retrovert
 
-This is the main graphical user interface for Retrovert (currently under heavy development). It uses the core and core-loader to play music.
+This is the main graphical user interface for Retrovert (currently not working and keep private until it's ready for testing) 
 
-## retrovert-console
+### retrovert-console
 
 https://github.com/RetrovertApp/retrovert-console
 
 This is the terminal interface for Retrovert. It uses the core and core-loader to play music.
+
+### *_playback
+
+All playback plugins has suffix _playback. These plugins are responsible for decoding audio for certain formats or streams.
+
+### *_output
+
+All output plugins has suffix _output. These plugins are responsible for outputting the audio to the user. This can be to a file, to the speakers, or to a stream.
