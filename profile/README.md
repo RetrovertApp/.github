@@ -52,7 +52,7 @@ All playback plugins has suffix _playback. These plugins are responsible for dec
 
 All output plugins has suffix _output. These plugins are responsible for outputting the audio to the user. This can be to a file, to the speakers, or to a stream.
 
-## How to build (#how-to-build)
+## How to build
 
 The easiest way to build the project to get a working player is to clone the scripts repository and run the build script. The following steps will create a terminal player that supports playing mods, xms, etc, using the libopenmpt plugin. 
 
