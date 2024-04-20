@@ -18,7 +18,7 @@ Over many years I tried various players and while some of them hold up none of t
 
 Retrovert is a highly modular project, and the repository is structured accordingly. The idea is that the core player can be used in other projects, and the UI can be replaced with something else if desired.
 
-One of the reasons the project is structured this way is that various plugins use libraries with different licenses. By keeping them separated, it becomes clearer what is used where. It does make building the code a bit more complex, but I think the added clarity makes it worth it. See [How to build](#how_to_build) section for information on building the code.
+One of the reasons the project is structured this way is that various plugins use libraries with different licenses. By keeping them separated, it becomes clearer what is used where. It does make building the code a bit more complex, but I think the added clarity makes it worth it. See [How to build](#how-to-build) section for information on building the code.
 
 ### core
 
@@ -52,7 +52,7 @@ All playback plugins has suffix _playback. These plugins are responsible for dec
 
 All output plugins has suffix _output. These plugins are responsible for outputting the audio to the user. This can be to a file, to the speakers, or to a stream.
 
-## How to build (#how_to_build)
+## How to build (#how-to-build)
 
 The easiest way to build the project to get a working player is to clone the scripts repository and run the build script. The following steps will create a terminal player that supports playing mods, xms, etc, using the libopenmpt plugin. 
 
