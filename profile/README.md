@@ -16,8 +16,6 @@ Over many years I tried various players and while some of them hold up none of t
 
 ## Repository structure
 
-Retroverts is a highly modular project, and the repository is structured as such. The idea is that the core player can be used from other projects, and the UI can be replaced with something else if desired.
-
 Retrovert is a highly modular project, and the repository is structured accordingly. The idea is that the core player can be used in other projects, and the UI can be replaced with something else if desired.
 
 One of the reasons the project is structured this way is that various plugins use libraries with different licenses. By keeping them separated, it becomes clearer what is used where. It does make building the code a bit more complex, but I think the added clarity makes it worth it. See the "How to Build" section for information on building the code.
