@@ -14,6 +14,17 @@ The aim I have with Retrovert is "a modern music player for your old-school need
 
 Over many years I tried various players and while some of them hold up none of them has been what I been looking for. Before starting this project I looked around quite a bit for alternatives and nothing really fit the bill.
 
+## How to build
+
+The easiest way to build the project to get a working player is to clone the scripts repository and run the build script. The following steps will create a terminal player that supports playing mods, xms, etc, using the libopenmpt plugin. 
+
+To build the Rust compiler, Python (for the build scripts), a C++ compiler (gcc or clang on macOS and Linux and MSVC on Windows), and CMake is required.
+
+1. Create a directiory and enter it (as more repositories will be cloned it's recommended to have a dedicated directory for this)
+2. Clone https://github.com/RetrovertApp/retrovert_scripts
+3. run `retrovert_scripts/clone-base.sh` on macOS and Linux or `retrovert_scripts\clone-base.bat` on Windows
+4. run `retrovert_scripts/build.sh` on macOS and Linux or `retrovert_scripts\build.bat` on Windows
+
 ## Repository structure
 
 Retrovert is a highly modular project, and the repository is structured accordingly. The idea is that the core player can be used in other projects, and the UI can be replaced with something else if desired.
@@ -51,14 +62,3 @@ All playback plugins has suffix _playback. These plugins are responsible for dec
 ### *_output
 
 All output plugins has suffix _output. These plugins are responsible for outputting the audio to the user. This can be to a file, to the speakers, or to a stream.
-
-## How to build
-
-The easiest way to build the project to get a working player is to clone the scripts repository and run the build script. The following steps will create a terminal player that supports playing mods, xms, etc, using the libopenmpt plugin. 
-
-To build the Rust compiler, Python (for the build scripts), a C++ compiler (gcc or clang on macOS and Linux and MSVC on Windows), and CMake is required.
-
-1. Create a directiory and enter it (as more repositories will be cloned it's recommended to have a dedicated directory for this)
-2. Clone https://github.com/RetrovertApp/retrovert_scripts
-3. run `retrovert_scripts/clone-base.sh` on macOS and Linux or `retrovert_scripts\clone-base.bat` on Windows
-4. run `retrovert_scripts/build.sh` on macOS and Linux or `retrovert_scripts\build.bat` on Windows
