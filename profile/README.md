@@ -1,6 +1,6 @@
-## Retrovert Musicplayer 
+## Retrovert music player 
 
-Retrovert is a music player for macOS, Windows, and Linux that primarily focuses on music made for systems such as the Amiga, C64, and various gaming consoles. While Retrovert supports MP3, FLAC, Ogg Vorbis, and other formats, these are not the main focus.
+Retrovert is a music player and audio visualizer for macOS, Windows, and Linux that primarily focuses on music made for systems such as the Amiga, C64, and various gaming consoles. While Retrovert supports MP3, FLAC, Ogg Vorbis, and other formats, these are not the main focus.
 
 ## Motivation
 
@@ -21,9 +21,9 @@ The easiest way to build the project to get a working player is to clone the scr
 To build the Rust compiler, Python (for the build scripts), a C++ compiler (gcc or clang on macOS and Linux and MSVC on Windows), and CMake is required.
 
 1. Create a directiory and enter it (as more repositories will be cloned it's recommended to have a dedicated directory for this)
-2. Clone https://github.com/RetrovertApp/retrovert_scripts
-3. run `retrovert_scripts/clone-base.sh` on macOS and Linux or `retrovert_scripts\clone-base.bat` on Windows
-4. run `retrovert_scripts/build.sh` on macOS and Linux or `retrovert_scripts\build.bat` on Windows
+2. Clone https://github.com/RetrovertApp/scripts
+3. run `scripts/clone-base.sh` on macOS and Linux or `scripts\clone-base.bat` on Windows
+4. run `scripts/build.sh` on macOS and Linux or `scripts\build.bat` on Windows
 
 ## Repository structure
 
